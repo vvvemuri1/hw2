@@ -9,11 +9,11 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** 
- * Updated by JCasGen Wed Sep 11 13:44:28 EDT 2013
- * XML source: /home/diwang/ur-workspace/deiis-f13-homework/src/main/resources/desc/deiis_types.xml
+/** Proposed answer to question being asked in sample information processing task.
+ * Updated by JCasGen Mon Sep 23 18:46:04 EDT 2013
+ * XML source: /Users/vvvemuri1/git/hw2/hw2-vvv/src/main/resources/descriptors/deiis_types.xml
  * @generated */
-public class Answer extends Annotation {
+public class Answer extends Sentence {
   /** @generated
    * @ordered 
    */
@@ -64,14 +64,14 @@ public class Answer extends Annotation {
   //*--------------*
   //* Feature: isCorrect
 
-  /** getter for isCorrect - gets 
+  /** getter for isCorrect - gets Boolean Flag indicating whether or not the proposed answer is correct.
    * @generated */
   public boolean getIsCorrect() {
     if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_isCorrect == null)
       jcasType.jcas.throwFeatMissing("isCorrect", "edu.cmu.deiis.types.Answer");
     return jcasType.ll_cas.ll_getBooleanValue(addr, ((Answer_Type)jcasType).casFeatCode_isCorrect);}
     
-  /** setter for isCorrect - sets  
+  /** setter for isCorrect - sets Boolean Flag indicating whether or not the proposed answer is correct. 
    * @generated */
   public void setIsCorrect(boolean v) {
     if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_isCorrect == null)

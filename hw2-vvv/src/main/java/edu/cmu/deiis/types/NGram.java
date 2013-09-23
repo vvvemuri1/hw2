@@ -10,9 +10,9 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.cas.FSArray;
 
 
-/** 
- * Updated by JCasGen Wed Sep 11 13:44:28 EDT 2013
- * XML source: /home/diwang/ur-workspace/deiis-f13-homework/src/main/resources/desc/deiis_types.xml
+/** Type representing unigram, bigram or trigram in question/answer.
+ * Updated by JCasGen Mon Sep 23 18:46:04 EDT 2013
+ * XML source: /Users/vvvemuri1/git/hw2/hw2-vvv/src/main/resources/descriptors/deiis_types.xml
  * @generated */
 public class NGram extends Annotation {
   /** @generated
@@ -65,14 +65,14 @@ public class NGram extends Annotation {
   //*--------------*
   //* Feature: elements
 
-  /** getter for elements - gets 
+  /** getter for elements - gets Tokens in NGram.
    * @generated */
   public FSArray getElements() {
     if (NGram_Type.featOkTst && ((NGram_Type)jcasType).casFeat_elements == null)
       jcasType.jcas.throwFeatMissing("elements", "edu.cmu.deiis.types.NGram");
     return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((NGram_Type)jcasType).casFeatCode_elements)));}
     
-  /** setter for elements - sets  
+  /** setter for elements - sets Tokens in NGram. 
    * @generated */
   public void setElements(FSArray v) {
     if (NGram_Type.featOkTst && ((NGram_Type)jcasType).casFeat_elements == null)
@@ -81,15 +81,15 @@ public class NGram extends Annotation {
     
   /** indexed getter for elements - gets an indexed value - 
    * @generated */
-  public Annotation getElements(int i) {
+  public Token getElements(int i) {
     if (NGram_Type.featOkTst && ((NGram_Type)jcasType).casFeat_elements == null)
       jcasType.jcas.throwFeatMissing("elements", "edu.cmu.deiis.types.NGram");
     jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((NGram_Type)jcasType).casFeatCode_elements), i);
-    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((NGram_Type)jcasType).casFeatCode_elements), i)));}
+    return (Token)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((NGram_Type)jcasType).casFeatCode_elements), i)));}
 
-  /** indexed setter for elements - sets an indexed value - 
+  /** indexed setter for elements - sets an indexed value - Tokens in NGram.
    * @generated */
-  public void setElements(int i, Annotation v) { 
+  public void setElements(int i, Token v) { 
     if (NGram_Type.featOkTst && ((NGram_Type)jcasType).casFeat_elements == null)
       jcasType.jcas.throwFeatMissing("elements", "edu.cmu.deiis.types.NGram");
     jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((NGram_Type)jcasType).casFeatCode_elements), i);
@@ -99,14 +99,14 @@ public class NGram extends Annotation {
   //*--------------*
   //* Feature: elementType
 
-  /** getter for elementType - gets 
+  /** getter for elementType - gets Type of the Objects stored in 'elements' array.
    * @generated */
   public String getElementType() {
     if (NGram_Type.featOkTst && ((NGram_Type)jcasType).casFeat_elementType == null)
       jcasType.jcas.throwFeatMissing("elementType", "edu.cmu.deiis.types.NGram");
     return jcasType.ll_cas.ll_getStringValue(addr, ((NGram_Type)jcasType).casFeatCode_elementType);}
     
-  /** setter for elementType - sets  
+  /** setter for elementType - sets Type of the Objects stored in 'elements' array. 
    * @generated */
   public void setElementType(String v) {
     if (NGram_Type.featOkTst && ((NGram_Type)jcasType).casFeat_elementType == null)

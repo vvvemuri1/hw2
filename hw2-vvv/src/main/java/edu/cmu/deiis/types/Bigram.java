@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Wed Sep 11 13:44:28 EDT 2013 */
+/* First created by JCasGen Mon Sep 23 18:46:04 EDT 2013 */
 package edu.cmu.deiis.types;
 
 import org.apache.uima.jcas.JCas; 
@@ -9,16 +9,16 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** Question being asked in sample information processing task.
+/** An n-gram of size 2.
  * Updated by JCasGen Mon Sep 23 18:46:04 EDT 2013
  * XML source: /Users/vvvemuri1/git/hw2/hw2-vvv/src/main/resources/descriptors/deiis_types.xml
  * @generated */
-public class Question extends Sentence {
+public class Bigram extends NGram {
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(Question.class);
+  public final static int typeIndexID = JCasRegistry.register(Bigram.class);
   /** @generated
    * @ordered 
    */
@@ -30,23 +30,23 @@ public class Question extends Sentence {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected Question() {/* intentionally empty block */}
+  protected Bigram() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated */
-  public Question(int addr, TOP_Type type) {
+  public Bigram(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
   
   /** @generated */
-  public Question(JCas jcas) {
+  public Bigram(JCas jcas) {
     super(jcas);
     readObject();   
   } 
 
   /** @generated */  
-  public Question(JCas jcas, int begin, int end) {
+  public Bigram(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);

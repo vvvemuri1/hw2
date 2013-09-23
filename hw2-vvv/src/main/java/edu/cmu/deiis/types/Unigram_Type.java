@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Wed Sep 11 13:44:28 EDT 2013 */
+/* First created by JCasGen Mon Sep 23 18:46:04 EDT 2013 */
 package edu.cmu.deiis.types;
 
 import org.apache.uima.jcas.JCas;
@@ -10,10 +10,10 @@ import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
-/** Question being asked in sample information processing task.
+/** An n-gram of size 1.
  * Updated by JCasGen Mon Sep 23 18:46:04 EDT 2013
  * @generated */
-public class Question_Type extends Sentence_Type {
+public class Unigram_Type extends NGram_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
@@ -21,31 +21,31 @@ public class Question_Type extends Sentence_Type {
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
-  			 if (Question_Type.this.useExistingInstance) {
+  			 if (Unigram_Type.this.useExistingInstance) {
   			   // Return eq fs instance if already created
-  		     FeatureStructure fs = Question_Type.this.jcas.getJfsFromCaddr(addr);
+  		     FeatureStructure fs = Unigram_Type.this.jcas.getJfsFromCaddr(addr);
   		     if (null == fs) {
-  		       fs = new Question(addr, Question_Type.this);
-  			   Question_Type.this.jcas.putJfsFromCaddr(addr, fs);
+  		       fs = new Unigram(addr, Unigram_Type.this);
+  			   Unigram_Type.this.jcas.putJfsFromCaddr(addr, fs);
   			   return fs;
   		     }
   		     return fs;
-        } else return new Question(addr, Question_Type.this);
+        } else return new Unigram(addr, Unigram_Type.this);
   	  }
     };
   /** @generated */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = Question.typeIndexID;
+  public final static int typeIndexID = Unigram.typeIndexID;
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.deiis.types.Question");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.deiis.types.Unigram");
 
 
 
   /** initialize variables to correspond with Cas Type and Features
 	* @generated */
-  public Question_Type(JCas jcas, Type casType) {
+  public Unigram_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 

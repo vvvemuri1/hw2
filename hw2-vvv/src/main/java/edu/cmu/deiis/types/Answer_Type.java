@@ -12,10 +12,10 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
-/** 
- * Updated by JCasGen Wed Sep 11 13:44:28 EDT 2013
+/** Proposed answer to question being asked in sample information processing task.
+ * Updated by JCasGen Mon Sep 23 18:46:04 EDT 2013
  * @generated */
-public class Answer_Type extends Annotation_Type {
+public class Answer_Type extends Sentence_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
