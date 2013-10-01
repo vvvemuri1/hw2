@@ -11,7 +11,7 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** Evaluation of the answers to the question.
- * Updated by JCasGen Mon Sep 23 18:46:04 EDT 2013
+ * Updated by JCasGen Mon Sep 23 19:21:37 EDT 2013
  * XML source: /Users/vvvemuri1/git/hw2/hw2-vvv/src/main/resources/descriptors/deiis_types.xml
  * @generated */
 public class Evaluation extends Annotation {

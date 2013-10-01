@@ -7,19 +7,7 @@
     <delegateAnalysisEngine key="TestElementAnnotator">
       <import location="/Users/vvvemuri1/git/hw2/hw2-vvv/src/main/resources/analysisEngines/primitive/TestElementAnnotator.xml"/>
     </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="TokenAnnotator">
-      <import location="/Users/vvvemuri1/git/hw2/hw2-vvv/src/main/resources/analysisEngines/primitive/TokenAnnotator.xml"/>
-    </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="NGramAnnotator">
-      <import location="/Users/vvvemuri1/git/hw2/hw2-vvv/src/main/resources/analysisEngines/primitive/NGramAnnotator.xml"/>
-    </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="AnswerScoringAnnotator">
-      <import location="/Users/vvvemuri1/git/hw2/hw2-vvv/src/main/resources/analysisEngines/primitive/AnswerScoringAnnotator.xml"/>
-    </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="EvaluationAnnotator">
-      <import location="/Users/vvvemuri1/git/hw2/hw2-vvv/src/main/resources/analysisEngines/primitive/EvaluationAnnotator.xml"/>
-    </delegateAnalysisEngine>
-  </delegateAnalysisEngineSpecifiers>
+    </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
     <name>FullAnalysisEngine</name>
     <description/>
@@ -30,11 +18,7 @@
     <flowConstraints>
       <fixedFlow>
         <node>TestElementAnnotator</node>
-        <node>TokenAnnotator</node>
-        <node>NGramAnnotator</node>
-        <node>AnswerScoringAnnotator</node>
-        <node>EvaluationAnnotator</node>
-      </fixedFlow>
+        </fixedFlow>
     </flowConstraints>
     <fsIndexCollection/>
     <capabilities>
